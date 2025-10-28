@@ -1,0 +1,36 @@
+# Starship prompt — KDE Plasma variant
+add_newline = true
+command_timeout = 600
+palette = "plasma"
+
+format = "[](fg:glow)[$username](bg:glow fg:night)[](fg:glow bg:mist)$directory$git_branch$git_status$cmd_duration$line_break$character"
+
+[palettes.plasma]
+glow = "#C7D2FE"
+mist = "#EEF2FF"
+night = "#111827"
+accent = "#6366F1"
+rose = "#F472B6"
+
+[username]
+show_always = true
+format = "[ 拾 $user ](bg:glow fg:night bold)"
+
+[directory]
+truncation_length = 4
+format = "[](fg:#CBD5F5 bg:mist)[ $path ](fg:night bg:mist)"
+truncation_symbol = "…"
+
+[git_branch]
+format = "[](fg:#CBD5F5 bg:mist)[ $symbol$branch ](fg:accent bg:mist)"
+
+[git_status]
+format = "([ $all_status$ahead_behind ])(fg:rose bg:mist)"
+
+[cmd_duration]
+min_time = 1000
+format = "[](fg:#D1D5DB bg:none)[ $duration ](fg:#4C51BF)"
+
+[character]
+success_symbol = "[❯](fg:accent bold)"
+error_symbol = "[❯](fg:rose bold)"

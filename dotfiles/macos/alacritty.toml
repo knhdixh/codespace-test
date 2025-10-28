@@ -1,0 +1,37 @@
+# Alacritty configuration tuned for macOS Retina displays
+[window]
+dynamic_title = true
+opacity = 0.96
+startup_mode = "Maximized"
+option_as_alt = "Both"
+
+decorations = "Buttonless"
+
+[window.padding]
+x = 18
+y = 14
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 13.5
+
+[colors.primary]
+background = "#0D1117"
+foreground = "#E6EDF3"
+
+[colors.cursor]
+text = "#0D1117"
+cursor = "#34D399"
+
+[colors.selection]
+text = "#0D1117"
+background = "#C7D2FE"
+
+[scrolling]
+multiplier = 2
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+vi_mode_style = { shape = "Block", blinking = "Off" }

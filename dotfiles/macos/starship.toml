@@ -1,0 +1,45 @@
+# Starship prompt — macOS variant
+add_newline = true
+command_timeout = 600
+palette = "swan"
+
+format = "[](fg:frost)[$username$hostname](bg:frost fg:ink)[](fg:frost bg:snow)$directory$git_branch$git_status$fill$cmd_duration$line_break$character"
+
+[palettes.swan]
+frost = "#E8EEF8"
+snow = "#F9FBFF"
+ink = "#1C1C1E"
+rose = "#FF7A85"
+leaf = "#3EB489"
+
+[username]
+show_always = true
+format = "[  $user ](bg:frost fg:ink bold)"
+
+[hostname]
+ssh_only = false
+format = "[ · $hostname ](bg:frost fg:#6B7280)"
+
+[directory]
+truncation_length = 3
+format = "[](fg:#CBD5F5 bg:snow)[ $path ](fg:ink bg:snow bold)"
+truncation_symbol = "…"
+
+[git_branch]
+format = "[](fg:#D1D5DB bg:snow)[ $symbol$branch ](fg:#111827 bg:snow)"
+
+[git_status]
+format = "([ $all_status$ahead_behind ])(fg:rose bg:snow)"
+
+[cmd_duration]
+min_time = 750
+format = "[](fg:#D1D5DB bg:none)[ $duration ](fg:#6B7280)"
+
+[fill]
+style = "fg:#D1D5DB"
+
+[character]
+success_symbol = "[❯](fg:leaf bold)"
+error_symbol = "[❯](fg:rose bold)"
+vi_insert_symbol = "[❯](fg:leaf bold)"
+vi_command_symbol = "[❮](fg:leaf bold)"
