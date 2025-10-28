@@ -52,6 +52,7 @@ The repo contains the following:
 * `.eslintrc`: Settings for [ESLint](https://eslint.org/)</a> that is included for code consistency and quality.
 * `.prettierrc`: Settings for [Prettier](https://prettier.io/) that is used to format code.
 * `package.json` and `package-lock.json`: Defines the project information for [Node.js](https://nodejs.org/)</a>, dependent packages and the versions needed of each.
+* `/dotfiles`: Platform-perfect shell profiles and prompts for macOS, Windows, and KDE Plasma. See the [Swan Suite Dotfiles Guide](docs/dotfiles-guide.md) for installation details and the [Operating System Architecture Comparison](docs/os-architecture-comparison.md) for cross-platform insights.
 
 <br />
 

@@ -1,0 +1,32 @@
+# Starship prompt — Windows variant
+add_newline = true
+command_timeout = 600
+palette = "aurora"
+
+format = "[](fg:mist)[$username](bg:mist fg:slate)[](fg:mist bg:cloud)$directory$git_branch$git_status$line_break$character"
+
+[palettes.aurora]
+mist = "#E3F2FD"
+cloud = "#F8FAFF"
+slate = "#1F2937"
+accent = "#2563EB"
+alert = "#EF4444"
+
+[username]
+show_always = true
+format = "[  $user ](bg:mist fg:slate bold)"
+
+[directory]
+truncation_length = 4
+format = "[](fg:#D1D5E7 bg:cloud)[ $path ](fg:slate bg:cloud)"
+truncation_symbol = "…"
+
+[git_branch]
+format = "[](fg:#D1D5E7 bg:cloud)[ $symbol$branch ](fg:accent bg:cloud)"
+
+[git_status]
+format = "([ $all_status$ahead_behind ])(fg:alert bg:cloud)"
+
+[character]
+success_symbol = "[❯](fg:accent bold)"
+error_symbol = "[❯](fg:alert bold)"
